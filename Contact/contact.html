@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <title>Verkefni 7</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="sidenav">
+          <a href="../index.html" class="logo" id="logo">STEIN</a>
+          <a href="../index.html">ABOUT</a>
+          <a href="../Photography/photography.html">PHOTOGRAPHY</a>
+          <a href="#clients">FILM</a>
+          <a href="#ART">ART</a>
+          <a href="#contact">EXHIBITIONS</a>
+          <a href="#contact">CONTACT</a>
+        </div>
+      </div>
+      <div class="content">
+        <form class="fomo" method="POST" action="#">
+          <label for="fname"> NAME</label>
+          <input
+            type="text"
+            name="fname"
+            required
+            placeholder="ALVIN FLANG"
+            pattern="^([^0-9]*)$"
+          />
+
+          <label for="email">EMAIL</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="ALVING@FLANG.NET"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          />
+
+          <br />
+          <label for="food">WHICH ONE?</label><br />
+          <input type="radio" id="Hamborgari" name="food" value="Hamborgari" />
+          <label for="Hamborgari">BORGÍS</label><br />
+          <input type="radio" id="pizza" name="food" value="pizza" />
+          <label for="pizza">PIZZA</label><br />
+
+          <label for="suggestions"> MESSAGE:</label>
+          <br />
+          <textarea rows="5" name="suggestions"> </textarea>
+          <!--cols="23" fer út fyrir litla skjái - betra að stíla breiddina-->
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
